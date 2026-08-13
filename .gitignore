@@ -1,0 +1,24 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Vector store index (rebuildable from data/)
+faiss_index/*
+!faiss_index/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# SQLite database (categories/destinations/document metadata) -- generated
+# and seeded automatically on first run. Local, per-deployment state, not
+# part of the shipped sample repo.
+wanderly.db
